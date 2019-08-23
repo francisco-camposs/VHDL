@@ -1,0 +1,11 @@
+ENTITY  exercicio1b  IS
+PORT (
+	a : IN std_logic;
+	b : IN std_logic;
+	s : OUT std_logic
+);
+END exercicio1b;
+
+ARCHITECTURE arq1b OF exercicio1b IS
+BEGINs <=  a nand b;
+END arq1b;
