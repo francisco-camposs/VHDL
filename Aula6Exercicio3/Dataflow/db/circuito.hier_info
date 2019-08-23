@@ -1,0 +1,13 @@
+|circuito
+a => f.IN0
+b => f.IN1
+b => f.IN0
+b => g.IN0
+c => f.IN1
+c => x.IN1
+c => g.IN1
+c => x.IN1
+d => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

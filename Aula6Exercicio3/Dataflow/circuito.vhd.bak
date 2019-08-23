@@ -1,0 +1,9 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY circuito IS
+PORT (
+	a, b, c, d: INSTD_LOGIC;
+	x: OUTSTD_LOGIC
+);
+END circuito;
