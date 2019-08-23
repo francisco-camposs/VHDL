@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Aula4Exercicio2
-Thu Aug 22 15:10:31 2019
+Fri Aug 23 10:49:59 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Thu Aug 22 15:10:31 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Aug 23 10:49:59 2019 ;
 ; Revision Name             ; Aula4Exercicio2                       ;
 ; Top-level Entity Name     ; Aula4Exercicio2                       ;
 ; Family                    ; Cyclone IV E                          ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                              ;
-+-----------------------------------------------------------------------------------------+
-; Generated Files                                                                         ;
-+-----------------------------------------------------------------------------------------+
-; /home/juniorcampos/Documentos/VHDL/Aula4Exercicio2/simulation/qsim//Aula4Exercicio2.vho ;
-+-----------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------+
+; Simulation Generated Files                                                   ;
++------------------------------------------------------------------------------+
+; Generated Files                                                              ;
++------------------------------------------------------------------------------+
+; /home/juniorcampos/VHDL/Aula4Exercicio2/simulation/qsim//Aula4Exercicio2.vho ;
++------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,12 +93,12 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Thu Aug 22 15:10:30 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula4Exercicio2/simulation/qsim/ Aula4Exercicio2 -c Aula4Exercicio2
-Info (204019): Generated file Aula4Exercicio2.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula4Exercicio2/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Fri Aug 23 10:49:58 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/VHDL/Aula4Exercicio2/simulation/qsim/ Aula4Exercicio2 -c Aula4Exercicio2
+Info (204019): Generated file Aula4Exercicio2.vho in folder "/home/juniorcampos/VHDL/Aula4Exercicio2/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1053 megabytes
-    Info: Processing ended: Thu Aug 22 15:10:31 2019
+    Info: Peak virtual memory: 1060 megabytes
+    Info: Processing ended: Fri Aug 23 10:49:59 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
