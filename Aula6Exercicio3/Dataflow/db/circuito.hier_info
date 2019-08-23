@@ -1,13 +1,12 @@
 |circuito
-a => f.IN0
-b => f.IN1
-b => f.IN0
+a => e.IN0
+b => e.IN1
+b => j.IN0
 b => g.IN0
-c => f.IN1
-c => x.IN1
+c => j.IN1
+c => T.IN1
 c => g.IN1
-c => x.IN1
-d => x.IN1
+d => h.IN1
 x <= x.DB_MAX_OUTPUT_PORT_TYPE
 
 

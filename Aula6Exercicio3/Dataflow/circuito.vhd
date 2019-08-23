@@ -1,4 +1,4 @@
-LIBRARY IEEE;
+ LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 
 ENTITY circuito IS
@@ -9,13 +9,21 @@ PORT (
 END circuito;
 
 ARCHITECTURE DATAFLOW OF circuito is
+	signal e : STD_LOGIC;
+	signal j : STD_LOGIC;
 	signal f : STD_LOGIC;
 	signal g : STD_LOGIC;
 	signal h : STD_LOGIC;
+	signal i : STD_LOGIC;
+	signal k : STD_LOGIC;
+	SIGNAL T : STD_LOGIC;
 
 BEGIN
-	f <= (a and b) or (not(b and c));
-	g <= not(b) and not(c);
-	x <= (f) or (((not(d) and not(g)) or c) or not(c));
-
+	e <= a and b; -- V
+	j <= not(b and c); -- V
+	f <= e or j; -- V
+	g <= not(b) and not(c);  -- 	V
+	T <= NOT(C OR G);
+	h <= (not(d)) AND T; -- v
+	X <= f or H;
 END DATAFLOW;

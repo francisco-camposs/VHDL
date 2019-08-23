@@ -1,5 +1,5 @@
 EDA Netlist Writer report for circuito
-Fri Aug 23 10:56:38 2019
+Fri Aug 23 16:40:16 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Aug 23 10:56:38 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Aug 23 16:40:16 2019 ;
 ; Revision Name             ; circuito                              ;
 ; Top-level Entity Name     ; circuito                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -65,13 +65,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+--------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                       ;
-+--------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                  ;
-+--------------------------------------------------------------------------------------------------+
-; /home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim//circuito.vho ;
-+--------------------------------------------------------------------------------------------------+
++--------------------------------------------------------------------------------+
+; Simulation Generated Files                                                     ;
++--------------------------------------------------------------------------------+
+; Generated Files                                                                ;
++--------------------------------------------------------------------------------+
+; /home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim//circuito.vho ;
++--------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,12 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Aug 23 10:56:37 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/ circuito -c circuito
-Info (204019): Generated file circuito.vho in folder "/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim//" for EDA simulation tool
+    Info: Processing started: Fri Aug 23 16:40:15 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/ circuito -c circuito
+Info (119006): Selected device EP4CE115F29C7 for design "circuito"
+Info (204019): Generated file circuito.vho in folder "/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1060 megabytes
-    Info: Processing ended: Fri Aug 23 10:56:38 2019
+    Info: Peak virtual memory: 1064 megabytes
+    Info: Processing ended: Fri Aug 23 16:40:16 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -7,21 +7,21 @@ Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-A
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off circuito -c circuito --vector_source="/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/Waveform.vwf" --testbench_file="/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/Waveform.vwf.vht"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off circuito -c circuito --vector_source="/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/Waveform.vwf" --testbench_file="/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/Waveform.vwf.vht"
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Fri Aug 23 10:56:35 2019Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off circuito -c circuito --vector_source=/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/Waveform.vwf --testbench_file=/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/Waveform.vwf.vht
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Fri Aug 23 16:40:12 2019Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off circuito -c circuito --vector_source=/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/Waveform.vwf --testbench_file=/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/Waveform.vwf.vhtInfo (119006): Selected device EP4CE115F29C7 for design "circuito"
 Completed successfully. 
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/" circuito -c circuito
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory="/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/" circuito -c circuito
 
-Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Fri Aug 23 10:56:37 2019Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/ circuito -c circuitoInfo (204019): Generated file circuito.vho in folder "/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings    Info: Peak virtual memory: 1060 megabytes    Info: Processing ended: Fri Aug 23 10:56:38 2019    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition    Info: Copyright (C) 2018  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel FPGA IP License Agreement, or other applicable license    Info: agreement, including, without limitation, that your use is for    Info: the sole purpose of programming logic devices manufactured by    Info: Intel and sold by Intel or its authorized distributors.  Please    Info: refer to the applicable agreement for further details.    Info: Processing started: Fri Aug 23 16:40:15 2019Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/ circuito -c circuitoInfo (119006): Selected device EP4CE115F29C7 for design "circuito"Info (204019): Generated file circuito.vho in folder "/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings    Info: Peak virtual memory: 1064 megabytes    Info: Processing ended: Fri Aug 23 16:40:16 2019    Info: Elapsed time: 00:00:01    Info: Total CPU time (on all processors): 00:00:01
 Completed successfully. 
 
 **** Generating the ModelSim .do script ****
 
-/home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/circuito.do generated.
+/home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/circuito.do generated.
 
 Completed successfully. 
 
@@ -32,27 +32,36 @@ Completed successfully.
 Reading pref.tcl
 # 10.5b
 # do circuito.do
+# ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 10:56:39 on Aug 23,2019# vcom -work work circuito.vho # -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Loading package VITAL_Timing
-# -- Loading package VITAL_Primitives# -- Loading package cycloneive_atom_pack# -- Loading package cycloneive_components# -- Compiling entity hard_block# -- Compiling architecture structure of hard_block
-# -- Compiling entity circuito# -- Compiling architecture structure of circuito# End time: 10:56:39 on Aug 23,2019, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
-# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016# Start time: 10:56:39 on Aug 23,2019# vcom -work work Waveform.vwf.vht 
-# -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Compiling entity circuito_vhd_vec_tst# -- Compiling architecture circuito_arch of circuito_vhd_vec_tst
-# End time: 10:56:39 on Aug 23,2019, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.circuito_vhd_vec_tst # Start time: 10:56:39 on Aug 23,2019# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.circuito_vhd_vec_tst(circuito_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading cycloneive.cycloneive_atom_pack(body)# Loading cycloneive.cycloneive_components# Loading work.circuito(structure)# Loading work.hard_block(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneive.cycloneive_io_obuf(arch)# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Start time: 16:40:19 on Aug 23,2019# vcom -work work circuito.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack# -- Loading package cycloneive_components
+# -- Compiling entity circuito
+# -- Compiling architecture structure of circuito
+# End time: 16:40:19 on Aug 23,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016# Start time: 16:40:19 on Aug 23,2019# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD# -- Loading package TEXTIO# -- Loading package std_logic_1164# -- Compiling entity circuito_vhd_vec_tst
+# -- Compiling architecture circuito_arch of circuito_vhd_vec_tst# End time: 16:40:19 on Aug 23,2019, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.circuito_vhd_vec_tst # Start time: 16:40:20 on Aug 23,2019# Loading std.standard# Loading std.textio(body)# Loading ieee.std_logic_1164(body)# Loading work.circuito_vhd_vec_tst(circuito_arch)# Loading ieee.vital_timing(body)# Loading ieee.vital_primitives(body)# Loading cycloneive.cycloneive_atom_pack(body)# Loading cycloneive.cycloneive_components# Loading work.circuito(structure)# Loading ieee.std_logic_arith(body)# Loading cycloneive.cycloneive_io_obuf(arch)# Loading cycloneive.cycloneive_io_ibuf(arch)# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
 # after#31
-# End time: 10:56:40 on Aug 23,2019, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
+# End time: 16:40:21 on Aug 23,2019, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading /home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/Waveform.vwf...
+Reading /home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/Waveform.vwf...
 
-Reading /home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/circuito.msim.vcd...
+Reading /home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/circuito.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to /home/juniorcampos/VHDL/Aula6Exercicio1/Aula6Exercicio3/Estrutural/simulation/qsim/circuito_20190823105640.sim.vwf
+Writing the resulting VWF to /home/juniorcampos/VHDL/Aula6Exercicio3/Dataflow/simulation/qsim/circuito_20190823164021.sim.vwf
 
 Finished VCD to VWF conversion.
 

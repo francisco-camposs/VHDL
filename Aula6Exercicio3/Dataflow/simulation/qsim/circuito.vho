@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "08/23/2019 10:56:38"
+-- DATE "08/23/2019 16:40:15"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -25,49 +25,6 @@
 -- 
 -- This VHDL file should be used for ModelSim-Altera (VHDL) only
 -- 
-
-LIBRARY CYCLONEIVE;
-LIBRARY IEEE;
-USE CYCLONEIVE.CYCLONEIVE_COMPONENTS.ALL;
-USE IEEE.STD_LOGIC_1164.ALL;
-
-ENTITY 	hard_block IS
-    PORT (
-	devoe : IN std_logic;
-	devclrn : IN std_logic;
-	devpor : IN std_logic
-	);
-END hard_block;
-
--- Design Ports Information
--- ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
-
-
-ARCHITECTURE structure OF hard_block IS
-SIGNAL gnd : std_logic := '0';
-SIGNAL vcc : std_logic := '1';
-SIGNAL unknown : std_logic := 'X';
-SIGNAL ww_devoe : std_logic;
-SIGNAL ww_devclrn : std_logic;
-SIGNAL ww_devpor : std_logic;
-SIGNAL \~ALTERA_ASDO_DATA1~~padout\ : std_logic;
-SIGNAL \~ALTERA_FLASH_nCE_nCSO~~padout\ : std_logic;
-SIGNAL \~ALTERA_DATA0~~padout\ : std_logic;
-SIGNAL \~ALTERA_ASDO_DATA1~~ibuf_o\ : std_logic;
-SIGNAL \~ALTERA_FLASH_nCE_nCSO~~ibuf_o\ : std_logic;
-SIGNAL \~ALTERA_DATA0~~ibuf_o\ : std_logic;
-
-BEGIN
-
-ww_devoe <= devoe;
-ww_devclrn <= devclrn;
-ww_devpor <= devpor;
-END structure;
-
 
 LIBRARY CYCLONEIVE;
 LIBRARY IEEE;
@@ -84,14 +41,6 @@ ENTITY 	circuito IS
 	);
 END circuito;
 
--- Design Ports Information
--- a	=>  Location: PIN_A4,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- b	=>  Location: PIN_A3,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- c	=>  Location: PIN_A7,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- d	=>  Location: PIN_A8,	 I/O Standard: 2.5 V,	 Current Strength: Default
--- x	=>  Location: PIN_A11,	 I/O Standard: 2.5 V,	 Current Strength: Default
-
-
 ARCHITECTURE structure OF circuito IS
 SIGNAL gnd : std_logic := '0';
 SIGNAL vcc : std_logic := '1';
@@ -107,18 +56,12 @@ SIGNAL ww_b : std_logic;
 SIGNAL ww_c : std_logic;
 SIGNAL ww_d : std_logic;
 SIGNAL ww_x : std_logic;
+SIGNAL \d~input_o\ : std_logic;
+SIGNAL \x~output_o\ : std_logic;
 SIGNAL \a~input_o\ : std_logic;
 SIGNAL \b~input_o\ : std_logic;
 SIGNAL \c~input_o\ : std_logic;
-SIGNAL \d~input_o\ : std_logic;
-SIGNAL \x~output_o\ : std_logic;
-
-COMPONENT hard_block
-    PORT (
-	devoe : IN std_logic;
-	devclrn : IN std_logic;
-	devpor : IN std_logic);
-END COMPONENT;
+SIGNAL \x~0_combout\ : std_logic;
 
 BEGIN
 
@@ -130,13 +73,7 @@ x <= ww_x;
 ww_devoe <= devoe;
 ww_devclrn <= devclrn;
 ww_devpor <= devpor;
-auto_generated_inst : hard_block
-PORT MAP (
-	devoe => ww_devoe,
-	devclrn => ww_devclrn,
-	devpor => ww_devpor);
 
--- Location: IOOBUF_X42_Y73_N2
 \x~output\ : cycloneive_io_obuf
 -- pragma translate_off
 GENERIC MAP (
@@ -144,11 +81,10 @@ GENERIC MAP (
 	open_drain_output => "false")
 -- pragma translate_on
 PORT MAP (
-	i => VCC,
+	i => \x~0_combout\,
 	devoe => ww_devoe,
 	o => \x~output_o\);
 
--- Location: IOIBUF_X7_Y73_N15
 \a~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -159,7 +95,6 @@ PORT MAP (
 	i => ww_a,
 	o => \a~input_o\);
 
--- Location: IOIBUF_X5_Y73_N8
 \b~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -170,7 +105,6 @@ PORT MAP (
 	i => ww_b,
 	o => \b~input_o\);
 
--- Location: IOIBUF_X29_Y73_N1
 \c~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
@@ -181,7 +115,21 @@ PORT MAP (
 	i => ww_c,
 	o => \c~input_o\);
 
--- Location: IOIBUF_X18_Y73_N22
+\x~0\ : cycloneive_lcell_comb
+-- Equation(s):
+-- \x~0_combout\ = (\a~input_o\) # ((!\c~input_o\) # (!\b~input_o\))
+
+-- pragma translate_off
+GENERIC MAP (
+	lut_mask => "1010111111111111",
+	sum_lutc_input => "datac")
+-- pragma translate_on
+PORT MAP (
+	dataa => \a~input_o\,
+	datac => \b~input_o\,
+	datad => \c~input_o\,
+	combout => \x~0_combout\);
+
 \d~input\ : cycloneive_io_ibuf
 -- pragma translate_off
 GENERIC MAP (
