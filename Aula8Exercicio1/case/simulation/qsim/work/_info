@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/case/simulation/qsim
 Edemux
-Z1 w1566846296
+Z1 w1567096550
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ V4ZE8Mj9W9WDTQOnmb4Emj3
 !s100 Af<?O5e5gS_C`QR>@Y_>g1
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1566846297
+Z11 !s110 1567096551
 !i10b 1
-Z12 !s108 1566846297.000000
+Z12 !s108 1567096551.000000
 Z13 !s90 -work|work|DEMUX.vho|
 Z14 !s107 DEMUX.vho|
 !i113 1
@@ -56,7 +56,7 @@ R14
 R15
 R16
 Edemux_vhd_vec_tst
-Z17 w1566846294
+Z17 w1567096548
 R5
 R6
 R0
@@ -82,8 +82,8 @@ R6
 Z22 DEx4 work 17 demux_vhd_vec_tst 0 22 0K:?Oe<n4O`Yc7WMHQmE>0
 l52
 L33
-V:0jliz@=WJWhOLKXd>]U;3
-!s100 j@JXTeMlB`NHcP:bPl?TP2
+Vn=kd8QK7_C2K3]k?H@h]P3
+!s100 De>knom>OM:enIKGSe<XH1
 R10
 32
 R11

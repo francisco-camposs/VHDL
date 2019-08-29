@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "08/28/2019 23:14:19"
+-- Generated on "08/29/2019 13:44:10"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          MaquinaDeCafe
 -- 
@@ -51,12 +51,12 @@ BEGIN
 -- INPUT[2]
 t_prcs_INPUT_2: PROCESS
 BEGIN
-	FOR i IN 1 TO 33
+	FOR i IN 1 TO 12
 	LOOP
 		INPUT(2) <= '0';
-		WAIT FOR 15000 ps;
+		WAIT FOR 40000 ps;
 		INPUT(2) <= '1';
-		WAIT FOR 15000 ps;
+		WAIT FOR 40000 ps;
 	END LOOP;
 	INPUT(2) <= '0';
 WAIT;
@@ -66,9 +66,9 @@ t_prcs_INPUT_1: PROCESS
 BEGIN
 LOOP
 	INPUT(1) <= '0';
-	WAIT FOR 10000 ps;
+	WAIT FOR 20000 ps;
 	INPUT(1) <= '1';
-	WAIT FOR 10000 ps;
+	WAIT FOR 20000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_INPUT_1;
@@ -77,9 +77,9 @@ t_prcs_INPUT_0: PROCESS
 BEGIN
 LOOP
 	INPUT(0) <= '0';
-	WAIT FOR 5000 ps;
+	WAIT FOR 10000 ps;
 	INPUT(0) <= '1';
-	WAIT FOR 5000 ps;
+	WAIT FOR 10000 ps;
 	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
 END LOOP;
 END PROCESS t_prcs_INPUT_0;

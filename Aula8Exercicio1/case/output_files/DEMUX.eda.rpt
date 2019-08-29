@@ -1,5 +1,5 @@
 EDA Netlist Writer report for DEMUX
-Mon Aug 26 16:04:56 2019
+Thu Aug 29 13:35:50 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Aug 26 16:04:56 2019 ;
+; EDA Netlist Writer Status ; Successful - Thu Aug 29 13:35:50 2019 ;
 ; Revision Name             ; DEMUX                                 ;
 ; Top-level Entity Name     ; DEMUX                                 ;
 ; Family                    ; Cyclone IV E                          ;
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Aug 26 16:04:55 2019
+    Info: Processing started: Thu Aug 29 13:35:50 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/case/simulation/qsim/ DEMUX -c DEMUX
 Info (204019): Generated file DEMUX.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/case/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1052 megabytes
-    Info: Processing ended: Mon Aug 26 16:04:56 2019
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 1060 megabytes
+    Info: Processing ended: Thu Aug 29 13:35:50 2019
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

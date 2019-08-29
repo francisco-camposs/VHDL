@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MaquinaDeCafe
-Wed Aug 28 23:02:35 2019
+Thu Aug 29 13:40:52 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Aug 28 23:02:35 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 29 13:40:52 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; MaquinaDeCafe                               ;
 ; Top-level Entity Name              ; MaquinaDeCafe                               ;
@@ -151,8 +151,8 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 2           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
 ; Maximum used               ; 1           ;
@@ -162,13 +162,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
-; MaquinaDeCafe.vhd                ; yes             ; User VHDL File  ; C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; MaquinaDeCafe.vhd                ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -260,7 +260,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -270,28 +270,28 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Aug 28 23:02:16 2019
+    Info: Processing started: Thu Aug 29 13:40:33 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MaquinaDeCafe -c MaquinaDeCafe
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file maquinadecafe.vhd
-    Info (12022): Found design unit 1: MaquinaDeCafe-LOGICA File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 11
-    Info (12023): Found entity 1: MaquinaDeCafe File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 4
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file MaquinaDeCafe.vhd
+    Info (12022): Found design unit 1: MaquinaDeCafe-LOGICA File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 11
+    Info (12023): Found entity 1: MaquinaDeCafe File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 4
 Info (12127): Elaborating entity "MaquinaDeCafe" for the top level hierarchy
-Warning (10631): VHDL Process Statement warning at MaquinaDeCafe.vhd(13): inferring latch(es) for signal or variable "CAFE", which holds its previous value in one or more paths through the process File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[0]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[1]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[2]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[3]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[4]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[5]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[6]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-Info (10041): Inferred latch for "CAFE[7]" at MaquinaDeCafe.vhd(13) File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Warning (10631): VHDL Process Statement warning at MaquinaDeCafe.vhd(13): inferring latch(es) for signal or variable "CAFE", which holds its previous value in one or more paths through the process File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[0]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[1]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[2]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[3]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[4]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[5]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[6]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+Info (10041): Inferred latch for "CAFE[7]" at MaquinaDeCafe.vhd(13) File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "CAFE[4]" is stuck at GND File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-    Warning (13410): Pin "CAFE[5]" is stuck at GND File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-    Warning (13410): Pin "CAFE[6]" is stuck at VCC File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
-    Warning (13410): Pin "CAFE[7]" is stuck at GND File: C:/Users/campo/OneDrive/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+    Warning (13410): Pin "CAFE[4]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+    Warning (13410): Pin "CAFE[5]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+    Warning (13410): Pin "CAFE[6]" is stuck at VCC File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
+    Warning (13410): Pin "CAFE[7]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula8Exercicio2/MaquinaDeCafe.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -300,9 +300,9 @@ Info (21057): Implemented 12 device resources after synthesis - the final resour
     Info (21059): Implemented 8 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Wed Aug 28 23:02:35 2019
+    Info: Peak virtual memory: 973 megabytes
+    Info: Processing ended: Thu Aug 29 13:40:52 2019
     Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Total CPU time (on all processors): 00:00:28
 
 

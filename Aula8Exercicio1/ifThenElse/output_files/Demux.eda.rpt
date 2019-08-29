@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Demux
-Mon Aug 26 15:43:09 2019
+Thu Aug 29 13:22:16 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Aug 26 15:43:09 2019 ;
+; EDA Netlist Writer Status ; Successful - Thu Aug 29 13:22:16 2019 ;
 ; Revision Name             ; Demux                                 ;
 ; Top-level Entity Name     ; DEMUX                                 ;
 ; Family                    ; Cyclone IV E                          ;
@@ -50,7 +50,8 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                ;
 +---------------------------------------------------------------------------------------------------+------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (VHDL) ;
-; Generate functional simulation netlist                                                            ; On                     ;
+; Generate functional simulation netlist                                                            ; Off                    ;
+; Time scale                                                                                        ; 1 ps                   ;
 ; Truncate long hierarchy paths                                                                     ; Off                    ;
 ; Map illegal HDL characters                                                                        ; Off                    ;
 ; Flatten buses into individual nodes                                                               ; Off                    ;
@@ -65,13 +66,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                               ;
-+------------------------------------------------------------------------------------------+
-; Generated Files                                                                          ;
-+------------------------------------------------------------------------------------------+
-; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux.vho ;
-+------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                      ;
++-----------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                 ;
++-----------------------------------------------------------------------------------------------------------------+
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_7_1200mv_85c_slow.vho      ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_7_1200mv_0c_slow.vho       ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_min_1200mv_0c_fast.vho     ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux.vho                        ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_7_1200mv_85c_vhd_slow.sdo  ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_7_1200mv_0c_vhd_slow.sdo   ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_min_1200mv_0c_vhd_fast.sdo ;
+; /home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//Demux_vhd.sdo                    ;
++-----------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -93,13 +101,20 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Mon Aug 26 15:43:09 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/ Demux -c Demux
+    Info: Processing started: Thu Aug 29 13:22:15 2019
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/ Demux -c Demux
+Info (204019): Generated file Demux_7_1200mv_85c_slow.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Demux_7_1200mv_0c_slow.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Demux_min_1200mv_0c_fast.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
 Info (204019): Generated file Demux.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Demux_7_1200mv_85c_vhd_slow.sdo in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Demux_7_1200mv_0c_vhd_slow.sdo in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Demux_min_1200mv_0c_vhd_fast.sdo in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file Demux_vhd.sdo in folder "/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1053 megabytes
-    Info: Processing ended: Mon Aug 26 15:43:09 2019
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 1066 megabytes
+    Info: Processing ended: Thu Aug 29 13:22:16 2019
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

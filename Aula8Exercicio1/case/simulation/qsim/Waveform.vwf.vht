@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "08/26/2019 16:04:54"
+-- Generated on "08/29/2019 13:35:48"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          DEMUX
 -- 
@@ -67,18 +67,32 @@ BEGIN
 	A1 <= '1';
 WAIT;
 END PROCESS t_prcs_A1;
-
--- S1[0]
-t_prcs_S1_0: PROCESS
-BEGIN
-	S1(0) <= '0';
-WAIT;
-END PROCESS t_prcs_S1_0;
-
 -- S1[1]
 t_prcs_S1_1: PROCESS
 BEGIN
+	FOR i IN 1 TO 16
+	LOOP
+		S1(1) <= '0';
+		WAIT FOR 30000 ps;
+		S1(1) <= '1';
+		WAIT FOR 30000 ps;
+	END LOOP;
+	S1(1) <= '0';
+	WAIT FOR 30000 ps;
 	S1(1) <= '1';
 WAIT;
 END PROCESS t_prcs_S1_1;
+-- S1[0]
+t_prcs_S1_0: PROCESS
+BEGIN
+	FOR i IN 1 TO 33
+	LOOP
+		S1(0) <= '0';
+		WAIT FOR 15000 ps;
+		S1(0) <= '1';
+		WAIT FOR 15000 ps;
+	END LOOP;
+	S1(0) <= '0';
+WAIT;
+END PROCESS t_prcs_S1_0;
 END DEMUX_arch;

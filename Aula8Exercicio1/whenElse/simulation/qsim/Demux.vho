@@ -16,7 +16,7 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
 
--- DATE "08/26/2019 14:29:26"
+-- DATE "08/29/2019 13:16:59"
 
 -- 
 -- Device: Altera EP4CE115F29C7 Package FBGA780
@@ -250,11 +250,11 @@ PORT MAP (
 -- Location: LCCOMB_X31_Y72_N2
 \O2~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \O2~0_combout\ = (\A1~input_o\ & (\S0~input_o\ & !\S1~input_o\))
+-- \O2~0_combout\ = (\A1~input_o\ & (!\S0~input_o\ & \S1~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000000010100000",
+	lut_mask => "0000101000000000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (
@@ -266,11 +266,11 @@ PORT MAP (
 -- Location: LCCOMB_X31_Y72_N28
 \O3~0\ : cycloneive_lcell_comb
 -- Equation(s):
--- \O3~0_combout\ = (\A1~input_o\ & (!\S0~input_o\ & \S1~input_o\))
+-- \O3~0_combout\ = (\A1~input_o\ & (\S0~input_o\ & !\S1~input_o\))
 
 -- pragma translate_off
 GENERIC MAP (
-	lut_mask => "0000101000000000",
+	lut_mask => "0000000010100000",
 	sum_lutc_input => "datac")
 -- pragma translate_on
 PORT MAP (

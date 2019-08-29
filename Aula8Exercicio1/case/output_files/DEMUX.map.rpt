@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DEMUX
-Mon Aug 26 16:02:35 2019
+Thu Aug 29 13:34:13 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Aug 26 16:02:35 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Aug 29 13:34:13 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; DEMUX                                       ;
 ; Top-level Entity Name              ; DEMUX                                       ;
@@ -258,7 +258,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Mon Aug 26 16:02:15 2019
+    Info: Processing started: Thu Aug 29 13:33:51 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DEMUX -c DEMUX
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file DEMUX.vhd
@@ -277,9 +277,9 @@ Info (21057): Implemented 11 device resources after synthesis - the final resour
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 4 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 961 megabytes
-    Info: Processing ended: Mon Aug 26 16:02:35 2019
-    Info: Elapsed time: 00:00:20
+    Info: Peak virtual memory: 970 megabytes
+    Info: Processing ended: Thu Aug 29 13:34:13 2019
+    Info: Elapsed time: 00:00:22
     Info: Total CPU time (on all processors): 00:00:28
 
 

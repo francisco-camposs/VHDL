@@ -1,5 +1,5 @@
 Flow report for Demux
-Mon Aug 26 15:43:09 2019
+Thu Aug 29 13:22:16 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -40,7 +40,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Aug 26 15:43:09 2019       ;
+; Flow Status                        ; Successful - Thu Aug 29 13:22:16 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Demux                                       ;
 ; Top-level Entity Name              ; DEMUX                                       ;
@@ -108,7 +108,9 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1053 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1048 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1053 MB             ; 00:00:01                           ;
-; Total                ; 00:00:46     ; --                      ; --                  ; 00:01:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1056 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1066 MB             ; 00:00:01                           ;
+; Total                ; 00:00:47     ; --                      ; --                  ; 00:01:03                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -128,6 +130,8 @@ refer to the applicable agreement for further details.
 ; EDA Netlist Writer   ; A205-01L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; A205-01L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; A205-01L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A202-01L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
+; EDA Netlist Writer   ; A202-01L         ; Ubuntu 16.04.5 ; 16         ; x86_64         ;
 +----------------------+------------------+----------------+------------+----------------+
 
 
@@ -145,6 +149,8 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_f
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/ Demux -c Demux
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Demux -c Demux --vector_source=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/Waveform.vwf --testbench_file=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/ Demux -c Demux
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off Demux -c Demux --vector_source=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/Waveform.vwf --testbench_file=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula8Exercicio1/ifThenElse/simulation/qsim/ Demux -c Demux
 
 
 
