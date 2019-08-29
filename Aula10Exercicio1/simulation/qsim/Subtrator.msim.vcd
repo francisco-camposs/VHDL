@@ -1,0 +1,120 @@
+$comment
+	File created using the following command:
+		vcd file Subtrator.msim.vcd -direction
+$end
+$date
+	Thu Aug 29 15:39:09 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module subtrator_vhd_vec_tst $end
+$var wire 1 ! A1 [0] $end
+$var wire 1 " A1 [1] $end
+$var wire 1 # A1 [2] $end
+$var wire 1 $ A1 [3] $end
+$var wire 1 % A2 [0] $end
+$var wire 1 & A2 [1] $end
+$var wire 1 ' A2 [2] $end
+$var wire 1 ( A2 [3] $end
+$var wire 1 ) OVERFLOW $end
+$var wire 1 * S1 [0] $end
+$var wire 1 + S1 [1] $end
+$var wire 1 , S1 [2] $end
+$var wire 1 - S1 [3] $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var wire 1 1 devoe $end
+$var wire 1 2 devclrn $end
+$var wire 1 3 devpor $end
+$var wire 1 4 ww_devoe $end
+$var wire 1 5 ww_devclrn $end
+$var wire 1 6 ww_devpor $end
+$var wire 1 7 ww_A1 [0] $end
+$var wire 1 8 ww_A1 [1] $end
+$var wire 1 9 ww_A1 [2] $end
+$var wire 1 : ww_A1 [3] $end
+$var wire 1 ; ww_A2 [0] $end
+$var wire 1 < ww_A2 [1] $end
+$var wire 1 = ww_A2 [2] $end
+$var wire 1 > ww_A2 [3] $end
+$var wire 1 ? ww_S1 [0] $end
+$var wire 1 @ ww_S1 [1] $end
+$var wire 1 A ww_S1 [2] $end
+$var wire 1 B ww_S1 [3] $end
+$var wire 1 C ww_OVERFLOW $end
+$var wire 1 D \A1[3]~input_o\ $end
+$var wire 1 E \A1[2]~input_o\ $end
+$var wire 1 F \A1[1]~input_o\ $end
+$var wire 1 G \A1[0]~input_o\ $end
+$var wire 1 H \A2[3]~input_o\ $end
+$var wire 1 I \A2[2]~input_o\ $end
+$var wire 1 J \A2[1]~input_o\ $end
+$var wire 1 K \A2[0]~input_o\ $end
+$var wire 1 L \S1[3]~output_o\ $end
+$var wire 1 M \S1[2]~output_o\ $end
+$var wire 1 N \S1[1]~output_o\ $end
+$var wire 1 O \S1[0]~output_o\ $end
+$var wire 1 P \OVERFLOW~output_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0)
+0.
+1/
+x0
+11
+12
+13
+14
+15
+16
+0C
+xD
+xE
+xF
+xG
+xH
+xI
+xJ
+xK
+0L
+0M
+0N
+0O
+0P
+x7
+x8
+x9
+x:
+x;
+x<
+x=
+x>
+0?
+0@
+0A
+0B
+x!
+x"
+x#
+x$
+x%
+x&
+x'
+x(
+0*
+0+
+0,
+0-
+$end
+#1000000
