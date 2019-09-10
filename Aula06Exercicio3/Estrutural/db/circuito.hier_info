@@ -1,0 +1,74 @@
+|circuito
+a => A_AND_B:G1.A
+b => A_AND_B:G1.B
+b => A_NAND_B:G2.A
+b => NOT_A:G3.A
+c => A_NAND_B:G2.B
+c => NOT_A:G4.A
+c => A_OR_B:G6.B
+d => NOT_A:G8_5.A
+x << A_OR_B:G10.X
+
+
+|circuito|A_AND_B:G1
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|A_NAND_B:G2
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|NOT_A:G3
+a => x.DATAIN
+x <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|NOT_A:G4
+a => x.DATAIN
+x <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|A_AND_B:G5
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|A_OR_B:G6
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|A_OR_B:G7
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|NOT_A:G8
+a => x.DATAIN
+x <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|NOT_A:G8_5
+a => x.DATAIN
+x <= a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|A_AND_B:G9
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|circuito|A_OR_B:G10
+a => x.IN0
+b => x.IN1
+x <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

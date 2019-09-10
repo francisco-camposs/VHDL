@@ -1,0 +1,21 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY Aula4Exercicio2 IS 
+PORT (
+
+	A, B : IN BIT_VECTOR(0 TO 3);
+	C : OUT BIT_VECTOR(7 DOWNTO 0)
+
+);
+END Aula4Exercicio2;
+
+ARCHITECTURE ESQUISITA OF Aula4Exercicio2 IS
+BEGIN
+	C(3 DOWNTO 0) <= B(0 TO 3);
+	C(7) <= A(3);
+	C(6) <= A(2);
+	C(5) <= A(1);
+	C(4) <= A(0);
+	
+END ESQUISITA;
