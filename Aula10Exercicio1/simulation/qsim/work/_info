@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 d/home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/simulation/qsim
 Ehard_block
-Z1 w1567103948
+Z1 w1568133944
 Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
 Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
 Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
@@ -25,9 +25,9 @@ VOgIg9T_BR7joedFDVM>H13
 !s100 A`ID_i56<Ua56=ZD=[EG=2
 Z10 OV;C;10.5b;63
 32
-Z11 !s110 1567103949
+Z11 !s110 1568133945
 !i10b 1
-Z12 !s108 1567103949.000000
+Z12 !s108 1568133945.000000
 Z13 !s90 -work|work|Subtrator.vho|
 Z14 !s107 Subtrator.vho|
 !i113 1
@@ -68,8 +68,8 @@ R8
 R9
 l0
 L77
-V89DDELCa24a<I[WZ_CLIF3
-!s100 oPXLImoOGY:cA2Y`XJ`8j1
+VnoJ<O]6GlI[mRNGXhDafO2
+!s100 :c]5_B;kUaNBTVcLlJSG12
 R10
 32
 R11
@@ -87,11 +87,11 @@ R4
 R5
 R6
 R7
-DEx4 work 9 subtrator 0 22 89DDELCa24a<I[WZ_CLIF3
-l137
-L102
-Vh@[YRSWDA2BY?M5_>7mBV3
-!s100 UfNEFHLVjdR^1d0XBb9U^2
+DEx4 work 9 subtrator 0 22 noJ<O]6GlI[mRNGXhDafO2
+l152
+L104
+Vee0hD5dFNN=73YPX>XLNd0
+!s100 o45eW7UkhDBIH5Xjj7Q?Z3
 R10
 32
 R11
@@ -103,7 +103,7 @@ R14
 R15
 R16
 Esubtrator_vhd_vec_tst
-Z17 w1567103946
+Z17 w1568133942
 R5
 R6
 R0
@@ -127,10 +127,10 @@ Asubtrator_arch
 R5
 R6
 Z22 DEx4 work 21 subtrator_vhd_vec_tst 0 22 :RizcMP<zHLeRh=1;JE^T1
-l48
+l50
 L33
-Z23 VBXH4nmoffzKYE]4c9A>`W3
-Z24 !s100 1XV39khTZ8jg6[ZJNWIfh0
+Vkb<:;JF8Q`8=m2UZYZhiJ1
+!s100 Lg5`f?aXU]SC7@AoWE^gk0
 R10
 32
 R11

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Subtrator
-Thu Aug 29 15:37:53 2019
+Tue Sep 10 13:43:39 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -14,7 +14,7 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "SOMADOR4BITS:P1"
+  9. Port Connectivity Checks: "SomadorCompleto:G1"
  10. Post-Synthesis Netlist Statistics for Top Partition
  11. Elapsed Time Per Partition
  12. Analysis & Synthesis Messages
@@ -43,16 +43,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Aug 29 15:37:53 2019       ;
+; Analysis & Synthesis Status        ; Successful - Tue Sep 10 13:43:39 2019       ;
 ; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
 ; Revision Name                      ; Subtrator                                   ;
 ; Top-level Entity Name              ; SUBTRATOR                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 0                                           ;
-;     Total combinational functions  ; 0                                           ;
+; Total logic elements               ; 7                                           ;
+;     Total combinational functions  ; 7                                           ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 13                                          ;
+; Total pins                         ; 14                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -162,56 +162,64 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                  ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                           ; Library ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
-; Subtrator.vhd                    ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd      ;         ;
-; PrimeiraColuna.vhd               ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/PrimeiraColuna.vhd ;         ;
-; DemaisColunas.vhd                ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/DemaisColunas.vhd  ;         ;
-; SOMADOR4BITS.vhd                 ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SOMADOR4BITS.vhd   ;         ;
-+----------------------------------+-----------------+-----------------+------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                   ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                            ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
+; Subtrator.vhd                    ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd       ;         ;
+; NXOR.vhd                         ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/NXOR.vhd            ;         ;
+; SomadorCompleto.vhd              ; yes             ; User VHDL File  ; /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SomadorCompleto.vhd ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary         ;
-+---------------------------------------------+-------+
-; Resource                                    ; Usage ;
-+---------------------------------------------+-------+
-;                                             ;       ;
-; Total combinational functions               ; 0     ;
-; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 0     ;
-;     -- 3 input functions                    ; 0     ;
-;     -- <=2 input functions                  ; 0     ;
-;                                             ;       ;
-; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 0     ;
-;     -- arithmetic mode                      ; 0     ;
-;                                             ;       ;
-; Total registers                             ; 0     ;
-;     -- Dedicated logic registers            ; 0     ;
-;     -- I/O registers                        ; 0     ;
-;                                             ;       ;
-; I/O pins                                    ; 13    ;
-;                                             ;       ;
-; Embedded Multiplier 9-bit elements          ; 0     ;
-;                                             ;       ;
-; Maximum fan-out node                        ; A1[3] ;
-; Maximum fan-out                             ; 1     ;
-; Total fan-out                               ; 13    ;
-; Average fan-out                             ; 0.50  ;
-+---------------------------------------------+-------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 7           ;
+;                                             ;             ;
+; Total combinational functions               ; 7           ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 2           ;
+;     -- 3 input functions                    ; 4           ;
+;     -- <=2 input functions                  ; 1           ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 7           ;
+;     -- arithmetic mode                      ; 0           ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 14          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; A1[0]~input ;
+; Maximum fan-out                             ; 3           ;
+; Total fan-out                               ; 41          ;
+; Average fan-out                             ; 1.17        ;
++---------------------------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |SUBTRATOR                 ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |SUBTRATOR          ; SUBTRATOR   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                            ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name     ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
+; |SUBTRATOR                 ; 7 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 14   ; 0            ; |SUBTRATOR                            ; SUBTRATOR       ; work         ;
+;    |SomadorCompleto:G1|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G1         ; SomadorCompleto ; work         ;
+;       |NXOR:G1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G1|NXOR:G1 ; NXOR            ; work         ;
+;    |SomadorCompleto:G2|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G2         ; SomadorCompleto ; work         ;
+;       |NXOR:G1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G2|NXOR:G1 ; NXOR            ; work         ;
+;    |SomadorCompleto:G3|    ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G3         ; SomadorCompleto ; work         ;
+;       |NXOR:G1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G3|NXOR:G1 ; NXOR            ; work         ;
+;    |SomadorCompleto:G4|    ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G4         ; SomadorCompleto ; work         ;
+;       |NXOR:G1|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |SUBTRATOR|SomadorCompleto:G4|NXOR:G1 ; NXOR            ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-----------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -230,18 +238,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SOMADOR4BITS:P1"                                                                                  ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port               ; Type   ; Severity ; Details                                                                             ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
-; a1[0..2]           ; Input  ; Info     ; Stuck at GND                                                                        ;
-; a1[3]              ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; a2[0..2]           ; Input  ; Info     ; Stuck at GND                                                                        ;
-; a2[3]              ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; overflow_subtracao ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; overflow           ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------------+--------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------+
+; Port Connectivity Checks: "SomadorCompleto:G1"  ;
++---------------+-------+----------+--------------+
+; Port          ; Type  ; Severity ; Details      ;
++---------------+-------+----------+--------------+
+; carry_entrada ; Input ; Info     ; Stuck at VCC ;
++---------------+-------+----------+--------------+
 
 
 +-----------------------------------------------------+
@@ -249,13 +252,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
-; cycloneiii_lcell_comb ; 1                           ;
-;     normal            ; 1                           ;
-;         0 data inputs ; 1                           ;
+; boundary_port         ; 14                          ;
+; cycloneiii_lcell_comb ; 11                          ;
+;     normal            ; 11                          ;
+;         1 data inputs ; 4                           ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 4                           ;
+;         4 data inputs ; 2                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 0.00                        ;
-; Average LUT depth     ; 0.00                        ;
+; Max LUT depth         ; 4.00                        ;
+; Average LUT depth     ; 3.21                        ;
 +-----------------------+-----------------------------+
 
 
@@ -264,7 +270,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -274,52 +280,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Thu Aug 29 15:37:32 2019
+    Info: Processing started: Tue Sep 10 13:43:21 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Subtrator -c Subtrator
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file Subtrator.vhd
-    Info (12022): Found design unit 1: SUBTRATOR-Aula10Exercicio1 File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 12
+    Info (12022): Found design unit 1: SUBTRATOR-Aula10Exercicio1 File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 13
     Info (12023): Found entity 1: SUBTRATOR File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file PrimeiraColuna.vhd
-    Info (12022): Found design unit 1: PrimeiraColuna-LOGICA File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/PrimeiraColuna.vhd Line: 12
-    Info (12023): Found entity 1: PrimeiraColuna File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/PrimeiraColuna.vhd Line: 4
-Info (12021): Found 2 design units, including 1 entities, in source file DemaisColunas.vhd
-    Info (12022): Found design unit 1: DemaisColunas-LOGICA File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/DemaisColunas.vhd Line: 13
-    Info (12023): Found entity 1: DemaisColunas File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/DemaisColunas.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file SOMADOR4BITS.vhd
-    Info (12022): Found design unit 1: SOMADOR4BITS-LOGICA File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SOMADOR4BITS.vhd Line: 13
-    Info (12023): Found entity 1: SOMADOR4BITS File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SOMADOR4BITS.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file NXOR.vhd
+    Info (12022): Found design unit 1: NXOR-LOGICA File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/NXOR.vhd Line: 11
+    Info (12023): Found entity 1: NXOR File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/NXOR.vhd Line: 4
+Info (12021): Found 2 design units, including 1 entities, in source file SomadorCompleto.vhd
+    Info (12022): Found design unit 1: SOMADORCOMPLETO-LOGICA File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SomadorCompleto.vhd Line: 12
+    Info (12023): Found entity 1: SomadorCompleto File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SomadorCompleto.vhd Line: 4
 Info (12127): Elaborating entity "Subtrator" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at Subtrator.vhd(8): used implicit default value for signal "OVERFLOW" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 8
-Warning (10036): Verilog HDL or VHDL warning at Subtrator.vhd(23): object "AUX0" assigned a value but never read File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 23
-Info (12128): Elaborating entity "SOMADOR4BITS" for hierarchy "SOMADOR4BITS:P1" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 29
-Info (12128): Elaborating entity "PrimeiraColuna" for hierarchy "SOMADOR4BITS:P1|PrimeiraColuna:P1" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SOMADOR4BITS.vhd Line: 35
-Info (12128): Elaborating entity "DemaisColunas" for hierarchy "SOMADOR4BITS:P1|DemaisColunas:P2" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SOMADOR4BITS.vhd Line: 36
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "S1[3]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 7
-    Warning (13410): Pin "S1[2]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 7
-    Warning (13410): Pin "S1[1]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 7
-    Warning (13410): Pin "S1[0]" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 7
-    Warning (13410): Pin "OVERFLOW" is stuck at GND File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 8
+Info (12128): Elaborating entity "SomadorCompleto" for hierarchy "SomadorCompleto:G1" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 31
+Info (12128): Elaborating entity "NXOR" for hierarchy "SomadorCompleto:G1|NXOR:G1" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/SomadorCompleto.vhd Line: 23
+Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 8 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "A1[3]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A1[2]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A1[1]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A1[0]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A2[3]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A2[2]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A2[1]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-    Warning (15610): No output dependent on input pin "A2[0]" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 6
-Info (21057): Implemented 13 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "TESTE" File: /home/juniorcampos/Documentos/VHDL/Aula10Exercicio1/Subtrator.vhd Line: 7
+Info (21057): Implemented 21 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 5 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 18 warnings
-    Info: Peak virtual memory: 975 megabytes
-    Info: Processing ended: Thu Aug 29 15:37:53 2019
-    Info: Elapsed time: 00:00:21
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21061): Implemented 7 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 969 megabytes
+    Info: Processing ended: Tue Sep 10 13:43:39 2019
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:27
 
 

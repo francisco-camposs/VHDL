@@ -54,8 +54,7 @@ set_global_assignment -name VHDL_FILE Subtrator.vhd
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE PrimeiraColuna.vhd
-set_global_assignment -name VHDL_FILE DemaisColunas.vhd
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_global_assignment -name VHDL_FILE SOMADOR4BITS.vhd
+set_global_assignment -name VHDL_FILE NXOR.vhd
+set_global_assignment -name VHDL_FILE SomadorCompleto.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

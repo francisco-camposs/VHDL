@@ -1,0 +1,9 @@
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY SomadorCompleto IS
+PORT (
+	Ai, Bi, Ci : IN STD_LOGIC;
+	S : OUT STD_LOGIC;
+	Ci_1 : out STD_LOGIC
+);
+END SomadorCompleto;
