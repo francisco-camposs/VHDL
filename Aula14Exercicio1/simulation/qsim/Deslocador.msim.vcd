@@ -1,0 +1,178 @@
+$comment
+	File created using the following command:
+		vcd file Deslocador.msim.vcd -direction
+$end
+$date
+	Thu Sep 12 14:13:19 2019
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module deslocador_vhd_vec_tst $end
+$var wire 1 ! direita $end
+$var wire 1 " entrada [0] $end
+$var wire 1 # entrada [1] $end
+$var wire 1 $ entrada [2] $end
+$var wire 1 % entrada [3] $end
+$var wire 1 & entrada [4] $end
+$var wire 1 ' entrada [5] $end
+$var wire 1 ( entrada [6] $end
+$var wire 1 ) entrada [7] $end
+$var wire 1 * esquerda $end
+$var wire 1 + saida [0] $end
+$var wire 1 , saida [1] $end
+$var wire 1 - saida [2] $end
+$var wire 1 . saida [3] $end
+$var wire 1 / saida [4] $end
+$var wire 1 0 saida [5] $end
+$var wire 1 1 saida [6] $end
+$var wire 1 2 saida [7] $end
+
+$scope module i1 $end
+$var wire 1 3 gnd $end
+$var wire 1 4 vcc $end
+$var wire 1 5 unknown $end
+$var wire 1 6 devoe $end
+$var wire 1 7 devclrn $end
+$var wire 1 8 devpor $end
+$var wire 1 9 ww_devoe $end
+$var wire 1 : ww_devclrn $end
+$var wire 1 ; ww_devpor $end
+$var wire 1 < ww_entrada [0] $end
+$var wire 1 = ww_entrada [1] $end
+$var wire 1 > ww_entrada [2] $end
+$var wire 1 ? ww_entrada [3] $end
+$var wire 1 @ ww_entrada [4] $end
+$var wire 1 A ww_entrada [5] $end
+$var wire 1 B ww_entrada [6] $end
+$var wire 1 C ww_entrada [7] $end
+$var wire 1 D ww_esquerda $end
+$var wire 1 E ww_direita $end
+$var wire 1 F ww_saida [0] $end
+$var wire 1 G ww_saida [1] $end
+$var wire 1 H ww_saida [2] $end
+$var wire 1 I ww_saida [3] $end
+$var wire 1 J ww_saida [4] $end
+$var wire 1 K ww_saida [5] $end
+$var wire 1 L ww_saida [6] $end
+$var wire 1 M ww_saida [7] $end
+$var wire 1 N \saida[7]~output_o\ $end
+$var wire 1 O \saida[6]~output_o\ $end
+$var wire 1 P \saida[5]~output_o\ $end
+$var wire 1 Q \saida[4]~output_o\ $end
+$var wire 1 R \saida[3]~output_o\ $end
+$var wire 1 S \saida[2]~output_o\ $end
+$var wire 1 T \saida[1]~output_o\ $end
+$var wire 1 U \saida[0]~output_o\ $end
+$var wire 1 V \esquerda~input_o\ $end
+$var wire 1 W \entrada[7]~input_o\ $end
+$var wire 1 X \entrada[6]~input_o\ $end
+$var wire 1 Y \direita~input_o\ $end
+$var wire 1 Z \saida~0_combout\ $end
+$var wire 1 [ \entrada[5]~input_o\ $end
+$var wire 1 \ \saida~1_combout\ $end
+$var wire 1 ] \saida~2_combout\ $end
+$var wire 1 ^ \entrada[4]~input_o\ $end
+$var wire 1 _ \saida~3_combout\ $end
+$var wire 1 ` \saida~4_combout\ $end
+$var wire 1 a \entrada[3]~input_o\ $end
+$var wire 1 b \saida~5_combout\ $end
+$var wire 1 c \saida~6_combout\ $end
+$var wire 1 d \entrada[2]~input_o\ $end
+$var wire 1 e \saida~7_combout\ $end
+$var wire 1 f \saida~8_combout\ $end
+$var wire 1 g \entrada[1]~input_o\ $end
+$var wire 1 h \saida~9_combout\ $end
+$var wire 1 i \saida~10_combout\ $end
+$var wire 1 j \entrada[0]~input_o\ $end
+$var wire 1 k \saida~11_combout\ $end
+$var wire 1 l \saida~12_combout\ $end
+$var wire 1 m \saida~13_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0*
+03
+14
+x5
+16
+17
+18
+19
+1:
+1;
+0D
+0E
+1N
+1O
+1P
+1Q
+1R
+1S
+1T
+1U
+0V
+1W
+1X
+0Y
+1Z
+1[
+0\
+1]
+1^
+0_
+1`
+1a
+0b
+1c
+1d
+0e
+1f
+1g
+0h
+1i
+1j
+0k
+1l
+1m
+1"
+1#
+1$
+1%
+1&
+1'
+1(
+1)
+1<
+1=
+1>
+1?
+1@
+1A
+1B
+1C
+1F
+1G
+1H
+1I
+1J
+1K
+1L
+1M
+1+
+1,
+1-
+1.
+1/
+10
+11
+12
+$end
+#1000000
