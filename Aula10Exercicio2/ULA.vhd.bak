@@ -1,0 +1,15 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+
+ENTITY ULA is
+PORT (
+	A, B : in std_logic_vector(0 to 7);
+	M, s1, s2 : in std_logic;
+	S : out std_logic_vector(0 to 7)
+);
+END ULA;
+
+architecture logica of ULA is 
+begin
+
+end logica;
