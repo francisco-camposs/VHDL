@@ -1,0 +1,33 @@
+|project1
+j0 => Codificador:g1.j0
+j1 => Codificador:g1.j1
+j2 => Codificador:g1.j2
+j3 => Codificador:g1.j3
+luz1 << Codificador:g1.s1
+luz2 << Codificador:g1.s2
+
+
+|project1|Codificador:g1
+j0 => s1.IN0
+j0 => s1.IN0
+j0 => s2.IN0
+j0 => s2.IN0
+j1 => s1.IN0
+j1 => s1.IN1
+j1 => s2.IN1
+j1 => s2.IN0
+j2 => s1.IN1
+j2 => s1.IN1
+j2 => s2.IN1
+j2 => s2.IN1
+j2 => s2.IN1
+j3 => s1.IN1
+j3 => s1.IN1
+j3 => s1.IN1
+j3 => s2.IN1
+j3 => s2.IN1
+j3 => s2.IN1
+s1 <= s1.DB_MAX_OUTPUT_PORT_TYPE
+s2 <= s2.DB_MAX_OUTPUT_PORT_TYPE
+
+
