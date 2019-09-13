@@ -1,18 +1,15 @@
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;
 
-entity Codificador is
+entity Decodificador is
 port (
-
-	j0,j1,j2,j3 = in std_logic;
-	s1, s2 = out std_logic
-
-); end Codificador;
+	e1,e2 : in std_logic;
+	luz1, luz2 : out std_logic
+); end Decodificador;
 
 
-architecture LOGICA of Codificador is
-port
-	s1 <= (j1 and j2 and j3)or(j0 and j1 and j2)or(j0 and j0 and j3)or(j0 and j1 and j3);
-	s2 <= (j0 and j2)or(j1 and j2)or(j3 and j1)or(j0 and j3)or(not(j0) and j2 and j3)or(not(j2) and j0 and j1)or(not(j3) and j0 and j1)or(not(j1 and j2 and j3));
-
+architecture LOGICA of Decodificador is
+begin
+	luz1 <= e2;
+	luz2 <= not(e1);
 end LOGICA;

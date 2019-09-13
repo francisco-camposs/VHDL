@@ -4,15 +4,15 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "luz1",
+					"name" : "luzVerde",
 					"strict" : false
 				},
 				{
-					"name" : "luz2",
+					"name" : "luzVermelha",
 					"strict" : false
 				},
 				{
-					"name" : "j0",
+					"name" : "j2",
 					"strict" : false
 				},
 				{
@@ -20,11 +20,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "j1",
+					"name" : "j0",
 					"strict" : false
 				},
 				{
-					"name" : "j2",
+					"name" : "j1",
 					"strict" : false
 				}
 			]

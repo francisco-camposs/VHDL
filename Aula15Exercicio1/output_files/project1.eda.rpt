@@ -1,5 +1,5 @@
 EDA Netlist Writer report for project1
-Fri Sep 13 11:03:00 2019
+Fri Sep 13 12:53:11 2019
 Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Sep 13 11:03:00 2019 ;
+; EDA Netlist Writer Status ; Successful - Fri Sep 13 12:53:11 2019 ;
 ; Revision Name             ; project1                              ;
 ; Top-level Entity Name     ; project1                              ;
 ; Family                    ; Cyclone IV E                          ;
@@ -93,13 +93,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Fri Sep 13 11:02:59 2019
+    Info: Processing started: Fri Sep 13 12:53:11 2019
 Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/juniorcampos/Documentos/VHDL/Aula15Exercicio1/simulation/qsim/ project1 -c project1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (204019): Generated file project1.vho in folder "/home/juniorcampos/Documentos/VHDL/Aula15Exercicio1/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1060 megabytes
-    Info: Processing ended: Fri Sep 13 11:03:00 2019
+    Info: Peak virtual memory: 1059 megabytes
+    Info: Processing ended: Fri Sep 13 12:53:12 2019
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

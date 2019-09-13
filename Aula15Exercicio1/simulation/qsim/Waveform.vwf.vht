@@ -18,7 +18,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "09/13/2019 11:02:58"
+-- Generated on "09/13/2019 12:53:09"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          project1
 -- 
@@ -37,16 +37,16 @@ SIGNAL j0 : STD_LOGIC;
 SIGNAL j1 : STD_LOGIC;
 SIGNAL j2 : STD_LOGIC;
 SIGNAL j3 : STD_LOGIC;
-SIGNAL luz1 : STD_LOGIC;
-SIGNAL luz2 : STD_LOGIC;
+SIGNAL luzVerde : STD_LOGIC;
+SIGNAL luzVermelha : STD_LOGIC;
 COMPONENT project1
 	PORT (
 	j0 : IN STD_LOGIC;
 	j1 : IN STD_LOGIC;
 	j2 : IN STD_LOGIC;
 	j3 : IN STD_LOGIC;
-	luz1 : BUFFER STD_LOGIC;
-	luz2 : BUFFER STD_LOGIC
+	luzVerde : OUT STD_LOGIC;
+	luzVermelha : OUT STD_LOGIC
 	);
 END COMPONENT;
 BEGIN
@@ -57,8 +57,8 @@ BEGIN
 	j1 => j1,
 	j2 => j2,
 	j3 => j3,
-	luz1 => luz1,
-	luz2 => luz2
+	luzVerde => luzVerde,
+	luzVermelha => luzVermelha
 	);
 
 -- j0
