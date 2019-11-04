@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Mealy is
+port ();
+
+
+
+end Mealy;
+
+architecture logica of Mealy is
+begin
+
+
+end;

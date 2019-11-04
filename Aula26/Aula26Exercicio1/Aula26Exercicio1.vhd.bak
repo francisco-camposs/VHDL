@@ -1,0 +1,7 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY Aula26Exercicio1 IS
+PORT (
+); 
+END Aula26Exercicio1;
